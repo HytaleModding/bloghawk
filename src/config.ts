@@ -4,7 +4,8 @@ import * as z from "zod";
 
 const ConfigToml = z.object({
     webhook: z.string(),
-    newsRole: z.string()
+    newsRole: z.string(),
+    interval: z.number()
 });
 
 const input = await readFile("config.toml", "utf8");

@@ -1,4 +1,5 @@
 import { fetchBlogPosts } from "./blog";
+import { configToml } from "./config";
 import { publishBlogPost } from "./discord";
 
 console.log("Keeping an eye.");
@@ -12,4 +13,4 @@ setInterval(async () => {
         lastBlogPostDate = createdAtDate;
         await publishBlogPost(blogPost);
     }
-}, 5000);
+}, configToml.interval * 1000);
