@@ -1,0 +1,8 @@
+# The URL of the webhook where news updates will be sent
+webhook = "WEBHOOK_URL"
+
+# The role to mention in the message
+newsRole = "NEWS_ROLE"
+
+# The interval (in seconds) at which to check for news updates
+interval = 60
